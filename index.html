@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gerador de Link do WhatsApp</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Gerador de Link do WhatsApp</h1>
+
+        <div class="input-group">
+            <label for="numero">Número do WhatsApp (com DDD):</label>
+            <input type="text" id="numero" placeholder="11987654321">
+        </div>
+
+        <div class="input-group">
+            <label for="mensagem">Mensagem (opcional):</label>
+            <textarea id="mensagem" placeholder="Olá! Vi seu anúncio..."></textarea>
+        </div>
+
+        <button class="btn-gerar" onclick="gerarLink()">
+            Gerar Link
+        </button>
+
+        <div id="resultado">
+            <strong>LINK GERADO:</strong>
+            <div class="link-gerado" id="LinkGerado"></div>
+            <button class="btn-copiar" onclick="CopiarLink()">
+                Copiar Link
+            </button>
+            <div class="sucesso" id="mensagemSucesso"></div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
